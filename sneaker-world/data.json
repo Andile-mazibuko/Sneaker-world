@@ -1,0 +1,186 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Air Max 270",
+      "brand": "Nike",
+      "size": "10",
+      "price": 150,
+      "color": "Red",
+      "description": "Comfortable and stylish running shoes.",
+      "image": "https://example.com/nike-air-max-270.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Ultraboost 21",
+      "brand": "Adidas",
+      "size": "9",
+      "price": 180,
+      "color": "Black",
+      "description": "High-performance running shoes with excellent cushioning.",
+      "image": "https://example.com/adidas-ultraboost-21.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Puma RS-X3",
+      "brand": "Puma",
+      "size": "8",
+      "price": 120,
+      "color": "Blue",
+      "description": "Trendy sneakers with a bold design.",
+      "image": "https://example.com/puma-rs-x3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Reebok Classic Leather",
+      "brand": "Reebok",
+      "size": "11",
+      "price": 100,
+      "color": "White",
+      "description": "Classic leather sneakers with a clean design.",
+      "image": "https://example.com/reebok-classic-leather.jpg"
+    },
+    {
+      "id": 5,
+      "name": "New Balance 574",
+      "brand": "New Balance",
+      "size": "10",
+      "price": 110,
+      "color": "Grey",
+      "description": "Versatile sneakers for everyday wear.",
+      "image": "https://example.com/new-balance-574.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Vans Old Skool",
+      "brand": "Vans",
+      "size": "9",
+      "price": 65,
+      "color": "Black/White",
+      "description": "Iconic skate shoes with a classic design.",
+      "image": "https://example.com/vans-old-skool.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Converse Chuck Taylor All-Star",
+      "brand": "Converse",
+      "size": "7",
+      "price": 50,
+      "color": "Red",
+      "description": "Classic canvas sneakers with a timeless look.",
+      "image": "https://example.com/converse-chuck-taylor.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Under Armour HOVR Phantom 2",
+      "brand": "Under Armour",
+      "size": "12",
+      "price": 140,
+      "color": "Gray/Black",
+      "description": "Running shoes with a responsive cushioning system.",
+      "image": "https://example.com/under-armour-hovr-phantom-2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Asics Gel-Kayano 28",
+      "brand": "Asics",
+      "size": "8",
+      "price": 160,
+      "color": "Purple/White",
+      "description": "High-performance running shoes for stability.",
+      "image": "https://example.com/asics-gel-kayano-28.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Saucony Triumph 18",
+      "brand": "Saucony",
+      "size": "10",
+      "price": 130,
+      "color": "Black/Blue",
+      "description": "Cushioned running shoes designed for long-distance comfort.",
+      "image": "https://example.com/saucony-triumph-18.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "username": "johndoe",
+      "phone": "+1 234 567 890",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "username": "janesmith",
+      "phone": "+1 234 567 891",
+      "password": "janesmith123"
+    },
+    {
+      "id": 3,
+      "name": "Samuel Jackson",
+      "email": "samuel.jackson@example.com",
+      "username": "samueljackson",
+      "phone": "+1 234 567 892",
+      "password": "samuel2025"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "username": "emilydavis",
+      "phone": "+1 234 567 893",
+      "password": "emilyDavis!2025"
+    },
+    {
+      "id": 5,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "username": "michaelbrown",
+      "phone": "+1 234 567 894",
+      "password": "mikebrown#2025"
+    },
+    {
+      "id": 6,
+      "name": "Jessica White",
+      "email": "jessica.white@example.com",
+      "username": "jessicawhite",
+      "phone": "+1 234 567 895",
+      "password": "jessica1234"
+    },
+    {
+      "id": 7,
+      "name": "Chris Green",
+      "email": "chris.green@example.com",
+      "username": "chrisgreen",
+      "phone": "+1 234 567 896",
+      "password": "chrisGreen123"
+    },
+    {
+      "id": 8,
+      "name": "Olivia Black",
+      "email": "olivia.black@example.com",
+      "username": "oliviablack",
+      "phone": "+1 234 567 897",
+      "password": "OliviaBlack!2025"
+    },
+    {
+      "id": 9,
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "username": "davidwilson",
+      "phone": "+1 234 567 898",
+      "password": "david123"
+    },
+    {
+      "id": 10,
+      "name": "Sophia Martinez",
+      "email": "sophia.martinez@example.com",
+      "username": "sophiamartinez",
+      "phone": "+1 234 567 899",
+      "password": "sophiaM2025"
+    }
+  ]
+}

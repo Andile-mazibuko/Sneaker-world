@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductService } from './Services/product.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'sneaker-world';
+  private prods: any[] = [];
+  constructor(private prod: ProductService){
+    /*this.prod.getApiData().subscribe((response)=>{
+      this.prods = response;
+    })
+    console.log(this.prods);*/
+  }
+  
 }

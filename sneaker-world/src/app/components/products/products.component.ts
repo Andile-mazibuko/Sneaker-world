@@ -19,4 +19,8 @@ export class ProductsComponent implements OnInit{
     }) 
   }
 
+  addToCart(product: Product):void{
+    console.log(product);
+  }
+
 }

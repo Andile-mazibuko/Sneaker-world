@@ -1,0 +1,18 @@
+<div class="container ms-0 mt-5 w-75">
+   <form action="" class="w-100" >
+        <div *ngFor="let product of products" class="prod w-25 mt-2 border-0 rounded-3">
+            <h3 class="w-100 d-flex justify-content-center">
+                {{ product.name }}
+            </h3>
+            <div class=" bg-danger prod-img ">
+                <img class="w-100" src="assets/img/nike-sneaker.png" alt="">
+            </div>
+            <h2 class="w-100 d-flex justify-content-center">R{{ product.price }}</h2>
+            <p>{{ product.description }}</p>
+            <div class="btn-area w-100 d-flex justify-content-center">
+                <button type="submit" class="button w-75 mb-2 bg-success border-0 rounded-pill ">Add to cart</button>
+            </div>
+            
+        </div>
+    </form>
+</div>

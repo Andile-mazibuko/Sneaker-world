@@ -19,7 +19,7 @@ export class CartManagerService {
   public removeToCart(prod: Product): void{
     for(let i = 0; i < this.cart.length; i++){
       if(this.cart[i].id === prod.id){
-        this.cart.splice(i);
+        this.cart.splice(i,1);
         this.behaviorSub.next(this.cart);
         break;
       }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from './Services/product.service';
+import { CartManagerService } from './Services/cart-manager.service';
+import { Product } from './interfaces/product';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +10,13 @@ import { ProductService } from './Services/product.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  private prods: any[] = [];
-  constructor(private prod: ProductService){
-    /*this.prod.getApiData().subscribe((response)=>{
-      this.prods = response;
-    })
-    console.log(this.prods);*/
+  
+  cart!: Product[];  
+  
+  constructor(private prod: ProductService,private cartManager: CartManagerService){
+    this.cartManager.getCartList().subscribe((resp: Product[])=>{
+      this.cart = resp
+    });
   }
   
 }

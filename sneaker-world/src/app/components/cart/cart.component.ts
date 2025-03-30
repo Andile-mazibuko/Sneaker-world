@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Output,EventEmitter } from '@angular/core';
 import { CartManagerService } from '../../Services/cart-manager.service';
 import { Product } from '../../interfaces/product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -10,9 +11,13 @@ import { Product } from '../../interfaces/product';
 })
 export class CartComponent {
 
+  
+  @Output() prods = new EventEmitter<Product[]>();
   cart: Product[] = [];
-  constructor(private cartService: CartManagerService){
+
+  constructor(private cartService: CartManagerService,private router:Router){
     this.getCart()
+    this.prods.emit(this.cart);
   }
 
 
@@ -21,5 +26,11 @@ export class CartComponent {
      this.cart = resp;
      console.log('CART LIST',this.cart)
     });
+  }
+  removeCart(prod:Product):void{
+    this.cartService.removeToCart(prod);
+  }
+  gotToCart():void{
+    this.router.navigate(['/list-form']);
   }
 }

@@ -11,11 +11,15 @@ import { Product } from '../../interfaces/product';
 export class CartComponent {
 
   cart: Product[] = [];
-  constructor(private cartService: CartManagerService){}
+  constructor(private cartService: CartManagerService){
+    this.getCart()
+  }
+
 
   getCart():void{
     this.cartService.getCartList().subscribe((resp: Product[])=>{
      this.cart = resp;
+     console.log('CART LIST',this.cart)
     });
   }
 }

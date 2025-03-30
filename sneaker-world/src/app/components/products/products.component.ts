@@ -24,7 +24,7 @@ export class ProductsComponent implements OnInit{
   addToCart(product: Product, event: Event):void{
     event.preventDefault();
     console.log(product);
-   // this.cartService.addToCart(product);
+    this.cartService.addToCart(product);
   }
   
 }

@@ -11,13 +11,10 @@ import { Router } from '@angular/router';
 })
 export class CartComponent {
 
-  
-//  @Output() prods = new EventEmitter<Product[]>();
   cart: Product[] = [];
 
   constructor(private cartService: CartManagerService,private router:Router){
     this.getCart()
-    //this.prods.emit(this.cart);
    
   }
 
@@ -25,7 +22,6 @@ export class CartComponent {
   getCart():void{
     this.cartService.getCartList().subscribe((resp: Product[])=>{
      this.cart = resp;
-    // console.log('CART LIST',this.cart)
     });
   }
   removeCart(prod:Product):void{

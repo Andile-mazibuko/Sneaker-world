@@ -1,2 +1,21 @@
-<p>{{ cart }}</p>
-<p>R{{ total }}</p>
+
+<h4 class="w-100 my-3 d-flex justify-content-center">Shopping cart</h4>
+<div class="w-100 d-flex flex-column justify-content-center ">
+    <div *ngFor="let item of cart" class="item w-50 mx-auto mt-1 d-flex justify-content-evenly">
+        
+        <div class="w-75 position-static top-0 mx-auto"> 
+            <p>#{{ item.id }}</p>
+            <p>{{ item.description }}</p>
+            <h2>${{ item.price }}</h2>
+        </div>
+        <div class="overflow-hidden m-1 d-flex float-end" style="width: 15%;border-radius: 10px; position: relative; top: 0;">
+            <img src="assets/img/nike-sneaker.png" alt="" class="w-100">
+        </div>
+    </div>
+</div>
+<div class="w-50 position-fixed bottom-0 mb-2 align-items-center d-flex justify-content-center bg-success" style="left: 25%;">
+    <p>
+        total: <br>
+        ${{ total }}
+    </p>
+</div>

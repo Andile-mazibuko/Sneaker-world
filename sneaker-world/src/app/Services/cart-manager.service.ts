@@ -6,9 +6,9 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CartManagerService {
-  private cart: Product[] = []; //sharable array
+  private cart: Product[] = []; 
   private behaviorSub = new BehaviorSubject<Product[]>(this.cart);
-  private totalPrice : number = 0;
+  private totalPrice! : number;
   private totalSub = new BehaviorSubject<number>(0);
   constructor() { }
 
@@ -20,10 +20,9 @@ export class CartManagerService {
   public removeToCart(prod: Product): void{
     for(let i = 0; i < this.cart.length; i++){
       if(this.cart[i].id === prod.id){
-        //subtract price first
         this.totalPrice  = this.totalPrice - this.cart[i].price;
         this.totalSub.next(this.totalPrice);
-        //remove element
+        
         this.cart.splice(i,1);
         this.behaviorSub.next(this.cart);
         break;
@@ -35,6 +34,7 @@ export class CartManagerService {
   }
   
   public getTotalPrice():number{
+    this.totalPrice = 0;
     for(let prod of this.cart){
       this.totalPrice += prod.price;
     }

@@ -8,6 +8,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ListCartComponent } from './components/list-cart/list-cart.component';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,12 @@ import { ListCartComponent } from './components/list-cart/list-cart.component';
     ProductsComponent,
     ProductComponent,
     CartComponent,
-    ListCartComponent
+    ListCartComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,HttpClientModule
+    AppRoutingModule,HttpClientModule,FormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

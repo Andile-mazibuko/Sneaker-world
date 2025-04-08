@@ -1,0 +1,19 @@
+
+form{
+    background-color: #d5d5d5;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.1), 0 32px 64px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 3s ease-in-out;
+}
+input{
+    height: 45px;
+    outline: none;
+    border: 0px;
+    width: 80%;
+    color: grey;
+    background-color: transparent;
+}
+.input{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255,.9);
+}
